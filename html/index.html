@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Currency Exchange App</title>
     
-    <!--CSS-->
+    <!--CSS & Font Awsome-->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
       
     
-    <!--Javascript , Polyfils , JQuery-->  
-    <script src="../javascript/js:promise-polyfil.js"></script>
-    <script src="../javascript/fetch.umd.js"></script>
+    <!--Javascript, JQuery-->  
+    
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
       
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Padauk|Stardos+Stencil&display=swap" rel="stylesheet"> 
+      
+      
+      
     
+      
+      
       
   </head>
     
@@ -27,20 +34,53 @@
       
       
       
-      <main>
-            
-          <div id="divHeader">
-            <h1 class="header">Foreign Exchange App</h1>
+      <main class="centreV">
+           
+          <div id="divHeader" class="fade">
+            <h1 class="header">ECB Foreign Exchange App</h1>
           </div>
           
-          <div id="divCurrencyContainer" class="button centreV">
+          <div class="divCurrencyContainer fade centreV" id="divCurrencyContainer1">
           
-                <div id="divCurrency" class="header">currency name</div>
-                <img src="#" alt=" currenct icon">
+                <div id="divCurrency1" class="divCurrency button centre">EUR</div>
+              
+                <div class="amount centre">
+                    <div id="div_warning"></div>
+                    <input type="text" class="centre" id="input_amount" value="1">
+                </div>
                 
-          
+              
+                <button id="button_swap"><i class="fas fa-retweet"></i></button> 
           </div>
-      
+          
+          
+          <div class="divCurrencyContainer fade centreV" id="divCurrencyContainer2">
+          
+
+                <div id="divCurrency2" class="divCurrency button centre">USD</div>
+                
+                <div class="amount centreV" id="result">
+                    <p></p>
+                    <div class="div_loading" id="div_loading4">
+                        <img src="../images/loading.gif">
+                    </div>
+                    
+                    
+              
+              
+                </div>
+              
+          </div>
+          
+          <div id="div_date"  class="centre fade">
+                
+                <p></p>
+                
+          </div>
+          
+          
+        
+
       
       
       </main>
@@ -52,7 +92,7 @@
      
       
       
-  <script src="../javascript/index.js"></script>            
+  <script src="../javascript/scripts.js"></script>            
   </body>
     
 </html>

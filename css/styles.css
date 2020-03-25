@@ -1,21 +1,213 @@
 
 *{ box-sizing: content-box;}
-body {height: 100vh;}
-main {width: 100%; height: 100%;
-      background-color: beige;}
-.header {width: 100%;
-        text-align: center;    
-        box-shadow: 0px 0px 3px black;
+
+body {height: 100vh;
+/*
+      background-image: url(../images/1242px-Logo_European_Central_Bank.svg.png);
+      background-size: 30%;
+      background-position: center;
+      background-repeat: repeat;
+*/
         }
 
 
-.button {cursor: pointer;}
+
+
+main {width: 100%; height: 100%;
+      background-color: aliceblue;
+     }
+
+
+
+#divHeader {
+            
+            
+        }
+
+
+
+.header {width: 100%;
+        text-align: center;    
+        
+        }
+
+.centre {text-align: center;}
 
 .centreV {display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;}
+        align-items: center;        
+        }
+
+.hide {display: none;}
 
 
-a:visited{color: black;}
+
+.button {cursor: pointer;}
+
+
+.fade {transition: opacity 0.4s;}
+
+
+
+div,h1,p, .amount {font-family: 'Padauk', sans-serif;}
+
+
+#div_warning {   
+        
+        width: 100%;
+        height: 30px;
+        
+        color: red;
+        font-size: 1em;        
+        }
+    
+
+.amount {width: 80%;
+            
+         margin-top: 2%;    
+        
+        height: 100px;    
+        }
+
+input {border: none;
+       font-size: 3em;
+       width: 100%;     
+       border-bottom: solid rgba(0,0,0,0.2) thin;   
+       outline:none; 
+      }
+
+#button_swap{font-size: 2em;
+             color: dodgerblue;
+             
+            }
+
+.divCurrencyContainer {position: relative;
+                        
+                        
+                        
+                        height: auto; 
+                        width: 80%;
+                       
+                    }
+
+
+#divCurrencyContainer1 {background-color: white;}
+
+#divCurrencyContainer2 {background-color: white;}
+
+
+
+
+.divCurrency {font-family: 'Stardos Stencil', cursive;
+              font-size: 2em;
+              border-radius: 50%;
+              width: auto;
+              padding: 2%;    
+              margin-top: 2%;
+
+                }
+
+#divCurrency1 {color: white;
+               background-color: blue;
+                box-shadow: 0px 0px 3px deepskyblue;
+                 border: solid white thin;
+                 
+                }
+
+#divCurrency2   {color: white;
+                 background-color: orange;
+                 box-shadow: 0px 0px 3px orange;
+                 border: solid white thin;      
+                }
+
+
+
+
+p {
+   padding: 1%;
+   color: rgba(0,0,0,0.7);        
+    }
+
+
+button {padding: 1%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        color: rgba(0,0,0,0.7);
+        
+        }
+
+
+#result {position: relative;}
+
+#result p {font-size: 3em;
+            margin: 0px;
+           color: lightseagreen;
+    
+            }
+
+#div_date {width: 80%;}
+#div_date p {width: 100%;}
+
+
+
+#div_modal {position: absolute; z-index: 2;
+            width: 100%; height: 100%;
+            background-color: rgba(256,256,256,0.8);
+            
+            }
+
+#div_currency_list {position: relative;
+                    width: 80%; height: 50%; 
+                    background-color: whitesmoke;
+                    overflow-y: scroll;
+                    box-shadow: 0px 0px 3px cadetblue;
+                    
+                    transform: translateY(-50px);
+                    opacity: 0;
+                    transition: transform 0.4s,opacity 0.4s;
+                    
+                    }
+
+.button_currency {width: 100%;
+                  background-color: white;
+                  color: darkslategray;
+                    }
+
+.button_currency:hover {background-color:darkslategray;color: white;}
+
+#div_membrane_modal {
+                position: relative;
+                top: -1%;
+                background-color: cadetblue;
+                
+                width: 80%;
+                height: 70px;
+                
+                
+            }
+#button_modal_close {border-radius: 25px;
+                     width: 100px;
+                     color: cadetblue;
+                     border: solid cadetblue thin;
+                     box-shadow: 0px 0px 3px white;
+                    }
+
+.div_loading {position: absolute;
+              z-index: 4;
+              width: 100%;
+              height: 100%;  
+              
+                
+                }
+
+.div_loading img  {
+                  height: 50px;    
+                }
+
+
+
+
 
