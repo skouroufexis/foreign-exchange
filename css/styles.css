@@ -77,8 +77,10 @@ input {border: none;
        outline:none; 
       }
 
-#button_swap{font-size: 2em;
-             color: dodgerblue;
+
+#button_swap{margin-top: 1%;
+             font-size: 1em;
+             
              
             }
 
